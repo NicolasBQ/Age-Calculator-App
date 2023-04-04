@@ -1,2 +1,10 @@
 @import './config';
+@import './fonts';
 
+body {
+    font-family: $poppins;
+}
+
+input {
+    font-family: $poppins;
+}

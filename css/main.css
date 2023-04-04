@@ -1,7 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
 *::before,
 *::after,
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-regular-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-bold-italic {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-extrabold-italic {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.font-8 {
+  font-size: 0.5rem;
+}
+
+.font-16 {
+  font-size: 1rem;
+}
+
+.font-20 {
+  font-size: 1.25rem;
+}
+
+.font-32 {
+  font-size: 2rem;
+}
+
+.font-80 {
+  font-size: 4.5rem;
+}
+
+.space-3 {
+  letter-spacing: 3px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=main.css.map */
