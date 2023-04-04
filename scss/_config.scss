@@ -20,3 +20,9 @@ $white: hsl(0, 0%, 100%);
     margin: 0;
     padding: 0;
 }
+
+@mixin for-laptop-up {
+    @media screen and (min-width: 50em) {
+        @content;
+    }
+}

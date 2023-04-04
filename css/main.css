@@ -141,5 +141,12 @@ body {
 }
 
 .main {
-  padding: 1rem;
+  padding: 3rem 0.8rem;
+  min-width: 55%;
+  border-radius: 1rem 1rem 10rem 1rem;
+}
+@media screen and (min-width: 50em) {
+  .main {
+    padding: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */
