@@ -1,13 +1,16 @@
 @import './config';
 @import './fonts';
 @import './colors';
+@import './layout';
 
 body {
     font-family: $poppins;
+    height: 100vh;
 }
 
 .input {
     font-family: $poppins;
+    width: 105px;
 }
 
 .anchor {

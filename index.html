@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Age Calculator App</title>
 </head>
-<body class="b-light-grey">
+<body class="b-light-grey flex flex-column items-center justify-center">
     <main class="b-white">
         <form>
-            <div>
-                <div>
+            <div class="flex items-center justify-center gap-12">
+                <div class="flex flex-column">
                     <label class="font-bold font-16 space-3 smokey-grey" for="day">DAY</label>
-                    <input class="input font-bold font-32 off-black" type="number" id="day">
+                    <input class="input font-bold font-32 off-black" type="number" id="day" placeholder="DD">
                 </div>
-                <div>
+                <div class="flex flex-column">
                     <label class="font-bold font-16 space-3 smokey-grey" for="month">MONTH</label>
-                    <input class="input font-bold font-32 off-black" type="number" id="month">
+                    <input class="input font-bold font-32 off-black" type="number" id="month" placeholder="MM">
                 </div>
-                <div>
+                <div class="flex flex-column">
                     <label class="font-bold font-16 space-3 smokey-grey" for="year">YEAR</label>
-                    <input class="input font-bold font-32 off-black" type="number" id="year">
+                    <input class="input font-bold font-32 off-black" type="number" id="year" placeholder="YYYY">
                 </div>
             </div>
             <button type="submit" class="b-purple">

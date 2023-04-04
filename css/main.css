@@ -82,12 +82,38 @@
   color: hsl(259deg, 100%, 65%);
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-12 {
+  gap: 0.75rem;
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
 .input {
   font-family: "Poppins", sans-serif;
+  width: 105px;
 }
 
 .anchor {
