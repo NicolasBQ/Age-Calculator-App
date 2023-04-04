@@ -3,23 +3,11 @@
 @import './colors';
 @import './layout';
 @import './box';
+@import './form';
 
 body {
     font-family: $poppins;
     height: 100vh;
-}
-
-.input {
-    font-family: $poppins;
-    width: 105px;
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button,
-    &[type=number] {
-        -webkit-appearance: none;
-        margin: 0;
-        -moz-appearance: textfield;
-    }
 }
 
 .anchor {
@@ -32,7 +20,7 @@ body {
 
 .main {
     padding: 3rem 0.8rem;
-    min-width: 55%;
+    min-width: 50%;
     border-radius: 1rem 1rem 10rem 1rem;
 
     @include for-laptop-up {
