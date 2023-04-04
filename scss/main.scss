@@ -1,10 +1,19 @@
 @import './config';
 @import './fonts';
+@import './colors';
 
 body {
     font-family: $poppins;
 }
 
-input {
+.input {
     font-family: $poppins;
+}
+
+.anchor {
+    text-decoration: none;
+
+    &:hover {
+        color: $purple;
+    }
 }

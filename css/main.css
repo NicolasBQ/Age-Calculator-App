@@ -58,10 +58,41 @@
   letter-spacing: 3px;
 }
 
+.b-light-grey {
+  background-color: hsl(0deg, 0%, 86%);
+}
+
+.b-white {
+  background-color: hsl(0deg, 0%, 94%);
+}
+
+.b-purple {
+  background-color: hsl(259deg, 100%, 65%);
+}
+
+.smokey-grey {
+  color: hsl(0deg, 1%, 44%);
+}
+
+.off-black {
+  color: hsl(0deg, 0%, 8%);
+}
+
+.purple {
+  color: hsl(259deg, 100%, 65%);
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
-input {
+.input {
   font-family: "Poppins", sans-serif;
+}
+
+.anchor {
+  text-decoration: none;
+}
+.anchor:hover {
+  color: hsl(259deg, 100%, 65%);
 }/*# sourceMappingURL=main.css.map */
