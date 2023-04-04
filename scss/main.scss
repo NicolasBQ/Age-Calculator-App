@@ -2,6 +2,7 @@
 @import './fonts';
 @import './colors';
 @import './layout';
+@import './box';
 
 body {
     font-family: $poppins;
@@ -11,6 +12,14 @@ body {
 .input {
     font-family: $poppins;
     width: 105px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button,
+    &[type=number] {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance: textfield;
+    }
 }
 
 .anchor {
@@ -19,4 +28,8 @@ body {
     &:hover {
         color: $purple;
     }
+}
+
+.main {
+    padding: 1rem;
 }
