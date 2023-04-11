@@ -9,22 +9,22 @@
 </head>
 <body class="b-light-grey flex flex-column items-center justify-center">
     <main class="main b-white margin-b-20">
-        <form class="form margin-b-64">
+        <form class="form margin-b-64" data-form>
             <div class="input-container margin-b-64">
-                <div class="flex flex-column">
+                <div class="input-container_container flex flex-column">
                     <label class="font-bold font-16 space-3 smokey-grey" for="day">DAY</label>
-                    <input class="input-container_input font-bold font-32 off-black padding-8" type="number" id="day" placeholder="DD">
-                    <p class="none font-regular-italic font-16 red margin-t-8"></p>
+                    <input class="input-container_input font-bold font-32 off-black padding-8 margin-b-8" type="number" id="day" placeholder="DD" data-input data-input-day>
+                    <p class="font-regular-italic font-16 red"></p>
                 </div>
-                <div class="flex flex-column">
+                <div class="input-container_container flex flex-column">
                     <label class="font-bold font-16 space-3 smokey-grey" for="month">MONTH</label>
-                    <input class="input-container_input font-bold font-32 off-black padding-8" type="number" id="month" placeholder="MM">
-                    <p class="none font-regular-italic font-16 red margin-t-8"></p>
+                    <input class="input-container_input font-bold font-32 off-black padding-8 margin-b-8" type="number" id="month" placeholder="MM" data-input data-input-month>
+                    <p class="font-regular-italic font-16 red"></p>
                 </div>
-                <div class="flex flex-column">
+                <div class="input-container_container flex flex-column">
                     <label class="font-bold font-16 space-3 smokey-grey" for="year">YEAR</label>
-                    <input class="input-container_input font-bold font-32 off-black padding-8" type="number" id="year" placeholder="YYYY">
-                    <p class="none font-regular-italic font-16 red margin-t-8"></p>
+                    <input class="input-container_input font-bold font-32 off-black padding-8 margin-b-8" type="number" id="year" placeholder="YYYY" data-input data-input-year>
+                    <p class="font-regular-italic font-16 red"></p>
                 </div>
             </div>
             <button type="submit" class="form-btn b-purple">

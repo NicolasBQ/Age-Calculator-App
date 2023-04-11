@@ -134,8 +134,8 @@
   margin-bottom: 4rem;
 }
 
-.margin-t-8 {
-  margin-top: 0.5rem;
+.margin-b-8 {
+  margin-bottom: 0.5rem;
 }
 
 .form {
@@ -169,6 +169,9 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
+}
+.input-container_container {
+  height: 100px;
 }
 .input-container_input {
   font-family: "Poppins", sans-serif;

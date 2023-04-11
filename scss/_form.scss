@@ -34,6 +34,10 @@
     justify-content: center;
     gap: 0.75rem;
 
+    &_container {
+        height: 100px;
+    }
+
     &_input {
         font-family: $poppins;
         width: 105px;
