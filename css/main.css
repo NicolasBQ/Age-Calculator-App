@@ -82,6 +82,18 @@
   color: hsl(259deg, 100%, 65%);
 }
 
+.red {
+  color: hsl(0deg, 100%, 67%);
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -122,6 +134,10 @@
   margin-bottom: 4rem;
 }
 
+.margin-t-8 {
+  margin-top: 0.5rem;
+}
+
 .form {
   border-bottom: 2px solid hsl(0deg, 0%, 86%);
   position: relative;
@@ -157,7 +173,7 @@
 .input-container_input {
   font-family: "Poppins", sans-serif;
   width: 105px;
-  border: 1px solid hsl(0deg, 0%, 86%);
+  border: 2px solid hsl(0deg, 0%, 86%);
   border-radius: 10px;
   outline: none;
 }
@@ -177,6 +193,10 @@
   .input-container_input {
     width: 140px;
   }
+}
+
+.invalid-input {
+  border: 2px solid hsl(0deg, 100%, 67%);
 }
 
 body {

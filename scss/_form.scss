@@ -37,7 +37,7 @@
     &_input {
         font-family: $poppins;
         width: 105px;
-        border: 1px solid $light-grey;
+        border: 2px solid $light-grey;
         border-radius: 10px;
         outline: none;
     
@@ -61,4 +61,8 @@
             width: 140px;
         }
     }
+}
+
+.invalid-input {
+    border: 2px solid $red;
 }
