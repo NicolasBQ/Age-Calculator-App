@@ -2,6 +2,7 @@ import { emptyFields } from "./emptyFields.js";
 import { invalidDay } from "./invalidDay.js";
 import {invalidMonth } from "./invalidMonth.js";
 import { invalidYear } from "./invalidYear.js";
+import { februaryValidation } from "./februaryValidation.js";
 
 const validationHandler = (e) => {
     e.preventDefault();
@@ -10,6 +11,7 @@ const validationHandler = (e) => {
         invalidDay(),
         invalidMonth(),
         invalidYear(),
+        februaryValidation()
     ]
 
     if(someEmpty) return;
