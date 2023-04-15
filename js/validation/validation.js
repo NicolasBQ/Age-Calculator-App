@@ -1,5 +1,5 @@
 import { emptyFields } from "./emptyFields.js";
-import { invalidDay } from "./invalidDay.js";
+import { invalidDay, dayByMonth } from "./invalidDay.js";
 import {invalidMonth } from "./invalidMonth.js";
 import { invalidYear } from "./invalidYear.js";
 import { februaryValidation } from "./februaryValidation.js";
@@ -9,6 +9,7 @@ const validationHandler = (e) => {
     const someEmpty = emptyFields();
     const validation = [
         invalidDay(),
+        dayByMonth(),
         invalidMonth(),
         invalidYear(),
         februaryValidation()
