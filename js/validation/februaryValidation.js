@@ -2,10 +2,15 @@ import { invalidUI } from "./invalidUI.js";
 
 const februaryValidation = () => {
     const inputMonth = document.querySelector('[data-input-month]');
-    if(!inputMonth.value || inputMonth.value != 2) return;
+    if(!inputMonth.value) return;
 
     const inputDay = document.querySelector('[data-input-day]');
     let invalid = false;
+
+    if(inputMonth.value != 2) {
+        return invalid;
+    }
+
     if(leapYear()) {
         if(inputDay.value > 29) {
             invalidUI(inputDay, true, 'Must be a valid date');
