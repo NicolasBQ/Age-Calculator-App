@@ -19,24 +19,23 @@ const invalidDay = () => {
 const dayByMonth = () => {
     const inputMonth = document.querySelector('[data-input-month]');
     if(!inputMonth.value || inputMonth.value == 2) return
-    const inputDay = document.querySelector('[data-input-day]');
     let invalid = false;
 
-
-    if(inputDay.value < 8 ){
-        invalid = firstSevenMonths(inputDay.value);
+    if(inputMonth.value < 8 ){
+        invalid = firstSevenMonths(inputMonth.value);
     } else {
-        invalid = lastFiveMonths(inputDay.value);
+        invalid = lastFiveMonths(inputMonth.value);
     }
 
-    console.log(invalid);
     return invalid;
 }
 
 const firstSevenMonths = (n) => {
     const inputDay = document.querySelector('[data-input-day]');
     let invalid = false;
+    
     if(n % 2 == 0) {
+        console.log(n);
         if(inputDay.value > 30) {
             invalidUI(inputDay, true, 'Must be a valid date');
             invalid = true;
