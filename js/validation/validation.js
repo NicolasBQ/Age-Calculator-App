@@ -3,6 +3,7 @@ import { invalidDay, dayByMonth } from "./invalidDay.js";
 import {invalidMonth } from "./invalidMonth.js";
 import { invalidYear } from "./invalidYear.js";
 import { februaryValidation } from "./februaryValidation.js";
+import { handler } from "../ageCalc/handler.js";
 
 const validationHandler = (e) => {
     e.preventDefault();
@@ -16,11 +17,10 @@ const validationHandler = (e) => {
     ]
 
     if(someEmpty) return;
-
     let isValidated = validation.some(val => val);
-    if(!isValidated) {
-        console.log(validation);
-    }
+    
+    if(isValidated) return;
+    handler();
 }
 
 

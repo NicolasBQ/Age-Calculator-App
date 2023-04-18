@@ -18,8 +18,12 @@ const invalidDay = () => {
 
 const dayByMonth = () => {
     const inputMonth = document.querySelector('[data-input-month]');
-    if(!inputMonth.value || inputMonth.value == 2) return
+    if(!inputMonth.value) return;
     let invalid = false;
+
+    if(inputMonth.value == 2) {
+        return invalid;
+    }
 
     if(inputMonth.value < 8 ){
         invalid = firstSevenMonths(inputMonth.value);
@@ -35,7 +39,6 @@ const firstSevenMonths = (n) => {
     let invalid = false;
     
     if(n % 2 == 0) {
-        console.log(n);
         if(inputDay.value > 30) {
             invalidUI(inputDay, true, 'Must be a valid date');
             invalid = true;
